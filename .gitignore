@@ -1,0 +1,22 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+*.class
+**/checks/out*/
+
+# IDE and signing material
+.idea/
+*.iml
+*.jks
+*.keystore
+
+# Local runtime data
+*.db
+*.db-shm
+*.db-wal
+*.log
+Thumbs.db
+.DS_Store

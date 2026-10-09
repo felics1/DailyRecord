@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:id="@+id/checkInTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_check_in_item_1_text"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/checkInSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/activity_check_in_item_2_text"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <Spinner android:layout_marginBottom="8dp"
+            android:id="@+id/outcomeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp"
+            android:contentDescription="@string/outcome_spinner_content_description" />
+        <EditText android:layout_marginBottom="8dp"
+            android:id="@+id/actualInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp"
+            android:hint="@string/actual_input_hint"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+        <TextView
+            android:id="@+id/urgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/urge_label_text"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/urgeSeek"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="10"
+            android:progress="5"
+            android:contentDescription="@string/urge_seek_content_description" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/activity_check_in_item_3_text"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <Spinner android:layout_marginBottom="8dp"
+            android:id="@+id/triggerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp"
+            android:contentDescription="@string/trigger_spinner_content_description" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_check_in_item_4_text"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+        <Spinner android:layout_marginBottom="8dp"
+            android:id="@+id/moodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp"
+            android:contentDescription="@string/mood_spinner_content_description" />
+        <EditText android:layout_marginBottom="8dp"
+            android:id="@+id/noteInput"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:hint="@string/note_input_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:importantForAutofill="no" />
+        <Button
+            android:id="@+id/saveRecordButton"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="18dp"
+            android:text="@string/save_record_button_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/activity_check_in_item_5_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

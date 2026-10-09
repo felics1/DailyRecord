@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_emergency_item_1_text"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/reasonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/reason_text_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/accent_card"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/intensityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intensity_label_text"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <SeekBar
+                android:id="@+id/intensitySeek"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:max="10"
+                android:progress="5"
+                android:contentDescription="@string/intensity_seek_content_description" />
+            <Spinner android:layout_marginBottom="8dp"
+                android:id="@+id/emergencyTriggerSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/emergency_trigger_spinner_content_description" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/activity_emergency_item_2_text"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/toolHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:text="@string/tool_hint_text_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="@string/timer_text_text"
+            android:textColor="@color/primary_dark"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/breatheButton"
+                style="@style/SecondaryButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/breathe_button_text" />
+            <Space android:layout_width="10dp" android:layout_height="1dp" />
+            <Button
+                android:id="@+id/waitButton"
+                style="@style/SecondaryButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/wait_button_text" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/waitCountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/wait_count_text_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/relievedButton"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="18dp"
+            android:text="@string/relieved_button_text" />
+        <Button
+            android:id="@+id/happenedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/happened_button_text"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
